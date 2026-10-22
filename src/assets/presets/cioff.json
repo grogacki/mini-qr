@@ -1,0 +1,31 @@
+{
+  "props": {
+    "data": "https://cioff.pl",
+    "image": "/src/assets/cioff.png",
+    "width": 1000,
+    "height": 1000,
+    "margin": 1,
+    "dotsOptions": {
+      "color": "#000000",
+      "type": "square"
+    },
+    "cornersSquareOptions": {
+      "color": "#000000",
+      "type": "square"
+    },
+    "cornersDotOptions": {
+      "color": "#000000",
+      "type": "square"
+    },
+    "imageOptions": {
+      "margin": 2
+    },
+    "qrOptions": {
+      "errorCorrectionLevel": "H"
+    }
+  },
+  "style": {
+    "borderRadius": "10px",
+    "background": "#ffffff"
+  }
+}

@@ -3,6 +3,7 @@ import { isValidFrameConfig } from './framePresets'
 import GeeksHackingConfig from '@/assets/presets/geekshacking.json'
 import SpDigitalConfig from '@/assets/presets/spdigital.json'
 import GovtechStackCommunityConfig from '@/assets/presets/govtech_stack.json'
+import CioffConfig from '@/assets/presets/cioff.json'
 import Hackomania2025Config from '@/assets/presets/hackomania2025.json'
 import PlainConfig from '@/assets/presets/plain.json'
 import type { DrawType, Options as StyledQRCodeProps } from '@/lib/qr-code'
@@ -296,6 +297,13 @@ export const spDigitalPreset = {
   style: SpDigitalConfig.style
 } as Preset
 
+export const cioffPreset = {
+  ...defaultPresetOptions,
+  name: 'CIOFF® Preset',
+  ...CioffConfig.props,
+  style: CioffConfig.style
+} as Preset
+
 export const govtechStackCommunityPreset = {
   ...defaultPresetOptions,
   name: 'GovTech - Stack Community',
@@ -321,6 +329,7 @@ export const builtInPresets: Preset[] = [
   lyqhtPreset,
   plainPreset,
   ...[
+    cioffPreset,
     padletPreset,
     uiliciousPreset,
     supabaseGreenPreset,
