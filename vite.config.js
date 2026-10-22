@@ -19,7 +19,10 @@ export default defineConfig(({ mode }) => {
     base,
     define: {
       // Make BASE_PATH available to client-side code through import.meta.env
-      'import.meta.env.BASE_PATH': JSON.stringify(base)
+      'import.meta.env.BASE_PATH': JSON.stringify(base),
+      // vue-i18n: kompilacja komunikatów bez new Function/eval (zgodna z CSP)
+      __INTLIFY_JIT_COMPILATION__: true,
+      __INTLIFY_DROP_MESSAGE_COMPILER__: false
     },
     plugins: [
       vue(),
