@@ -81,7 +81,7 @@ const isModeToggleDisabled = computed(() => {
     <div class="hidden md:mx-auto md:my-4 md:flex md:w-5/6 md:flex-row md:justify-between md:ps-4">
       <div class="flex items-center">
         <h1 class="text-3xl text-gray-700 dark:text-gray-100">
-          <img alt="" src="/src/assets/cioff.png" class="img-responsive" width="100" />
+          <img alt="CIOFF®" src="@/assets/cioff.png" class="img-responsive" width="100" />
         </h1>
 
         <!-- Mode toggle button - only visible on desktop -->
