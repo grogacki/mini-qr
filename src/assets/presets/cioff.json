@@ -1,7 +1,7 @@
 {
   "props": {
     "data": "https://cioff.pl",
-    "image": "/src/assets/cioff.png",
+    "image": "/public/cioff.png",
     "width": 1000,
     "height": 1000,
     "margin": 1,
